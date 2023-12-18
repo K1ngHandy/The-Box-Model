@@ -38,15 +38,23 @@
     /* PROBLEM 3
       The paragraphs sections are packed between the titles. Add 1em padding and set the background color to lightgrey.
       */
-    
+    p {
+      padding: 1em;
+      background-color: lightgrey;
+    }
 
     /* PROBLEM 4
       It's looking much better. But the paragraphs inside the last section are still too close to each other. Choose the right selector(s) and add 1em padding to the bottom */
-    /* ENTER YOUR CODE HERE */
+    .content.section {
+      padding-bottom: 1em;
+    }
 
     /* PROBLEM 5 (DEBUGGING)
       When we start messing with margins and paddings, often we run into the "double spacing" issue, like what's happening in the end of each section. Why is this happening? How could you fix it by adding a new declaration below? */
-    /* ENTER YOUR CODE HERE */
+    .section {
+      padding-bottom: 0;
+      /* remove bottom padding to prevent doubling with top padding */
+    }
   </style>
 </head>
 
